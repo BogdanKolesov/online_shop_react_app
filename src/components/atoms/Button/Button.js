@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyledButton } from './Button.styles';
 
-const Button = ({ text, primary, secondary, transparent, round }) => {
+const Button = ({ text, variant, round, square }) => {
     return (
-        <StyledButton text={text}>
+        <StyledButton text={text} variant={variant} round={round} square={square}>
             {text}
         </StyledButton>
     );
