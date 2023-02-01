@@ -5,6 +5,6 @@ export const StyledContainer = styled.div`
     display: flex;
     flex-direction: ${props => props.dir === 'col' ? 'column' : 'row'};
     align-items: ${props => props.align ? props.align : 'center'};
-    justify - content: ${props => props.justify ? props.justify : 'center'};
-    background - color: ${props => props.bg ? props.bg : 'red'};
+    justify-content: ${props => props.justify ? props.justify : 'center'};
+    background-color: ${props => props.bg ? props.bg : 'red'};
 `

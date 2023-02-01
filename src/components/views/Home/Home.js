@@ -3,7 +3,7 @@ import { Button, Container } from '../../atoms'
 
 const Home = () => {
     return (
-        <Container type='full'>
+        <Container type='full' bg='red'>
             <Button text='Hello!' font='bold' />
         </Container>
     );
