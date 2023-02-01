@@ -9,7 +9,16 @@ export default {
             type: 'string',
             description: 'Вариант кнопки',
             defaultValue: 'primary',
-            options: ['primary', 'square', 'link'],
+            options: ['primary', 'none'],
+            control: {
+                type: 'radio'
+            }
+        },
+        form: {
+            type: 'string',
+            description: 'Форма кнопки',
+            defaultValue: 'regular',
+            options: ['round', 'regular'],
             control: {
                 type: 'radio'
             }
@@ -18,7 +27,7 @@ export default {
             type: 'string',
             description: 'Вариант размера кнопки',
             defaultValue: 'regular',
-            options: ['regular', 'small', 'big'],
+            options: ['regular', 'big'],
             control: {
                 type: 'radio'
             }
@@ -32,11 +41,4 @@ export const Default = Template.bind({})
 
 Default.args = {
     text: 'Hello!',
-
-}
-
-export const Large = Template.bind({})
-Large.arg = {
-    text: 'Large button',
-    size: 'large'
 }
