@@ -32,6 +32,15 @@ export default {
                 type: 'radio'
             }
         },
+        font: {
+            type: 'string',
+            description: 'Вариант шрифта кнопки',
+            defaultValue: 'thin',
+            options: ['regular', 'bold', 'thin'],
+            control: {
+                type: 'radio'
+            }
+        },
     }
 }
 

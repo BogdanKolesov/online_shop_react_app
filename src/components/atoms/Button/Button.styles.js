@@ -15,7 +15,7 @@ export const StyledButton = styled.div`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
+    font-family:  ${props => props.font === 'thin' ? 'Roboto Thin' : props.font === 'bold' ? 'Roboto Bold' : 'Roboto Regular'}; ;
     &:hover{
         -webkit-box-shadow: 2px 2px 5px 2px #B1B1B1; 
         box-shadow: 2px 2px 5px 2px #B1B1B1;

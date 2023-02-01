@@ -1,11 +1,11 @@
 import React from 'react';
-import { Button } from '../../atoms'
+import { Button, Container } from '../../atoms'
 
 const Home = () => {
     return (
-        <div>
-            <Button text='Hello!' />
-        </div>
+        <Container type='full'>
+            <Button text='Hello!' font='bold' />
+        </Container>
     );
 }
 
