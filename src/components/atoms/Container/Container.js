@@ -1,10 +1,13 @@
 import React from 'react'
-import { StyledContainer } from './Container.styles'
+import styled from 'styled-components';
 
-export default function Container(type, dir, align, justify, bg, children) {
-    return (
-        <StyledContainer type={type} dir={dir} align={align} justify={justify} bg={bg}>
-            {children}
-        </StyledContainer>
-    )
-}
+const Container = styled.div`
+    width: ${props => props.type === 'full' ? "100%" : props.type === 'half' ? '50%' : props.type === 'container' ? '70%' : 'auto'};
+    display: flex;
+    flex-direction: ${props => props.dir === 'col' ? 'column' : 'row'};
+    align-items: ${props => props.align ? props.align : 'center'};
+    justify-content: ${props => props.justify ? props.justify : 'center'};
+    background-color: ${props => props.bg ? props.bg : 'red'};
+`
+
+export default Container
